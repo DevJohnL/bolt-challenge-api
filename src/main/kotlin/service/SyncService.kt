@@ -24,8 +24,6 @@ class SyncService(
     fun syncData() {
         logger.info("Iniciando sincronização com ANEEL...")
 
-        repository.deleteAll()
-
         try {
             val responseResource = restClient.build()
                 .get()
