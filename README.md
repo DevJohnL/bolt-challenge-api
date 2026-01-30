@@ -70,6 +70,7 @@ gradlew.bat bootRun
 ```
 
   **Nota:** Ao iniciar, a aplicação executará automaticamente o Job de importação (CsvImportJob). Aguarde a mensagem "Sincronização finalizada com sucesso!" no console.
+**Em média está sendo salvo no banco 1000 usina por segundo. Como o arquivo de coleta contém cerca 420+mil registros inicialmente na primeira fez que rodar a aplicação levará cerca de 10 minutos para a sincronização está finalizada com sucesso, então é necessário aguardar para fazer a chamada na API. Após a primeira sincronização não é necessário aguardar 10 minutos visto que o Job de extração ocorrerá automático a cada 1 hora.**
 
 ### 🔌 Documentação da API
 ***Listar Top 5 Geradores***
