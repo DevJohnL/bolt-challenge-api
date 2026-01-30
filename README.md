@@ -106,7 +106,6 @@ O sistema possui um agendador (Scheduler) configurado para atualizar a base de d
 
 * **Frequência:** Configurada via @Scheduled (Padrão: 1 hora).
 
-* **Estratégia:** Limpeza prévia (deleteAll) seguida de carga total otimizada em lotes.
 
 ### 👨‍💻 Autor
 
