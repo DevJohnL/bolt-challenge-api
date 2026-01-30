@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: bolt-postgres
+    environment:
+      - POSTGRES_USER=boltuser
+      - POSTGRES_PASSWORD=boltpassword
+      - POSTGRES_DB=boltdb
+    ports:
+      - "5432:5432"
